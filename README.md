@@ -87,7 +87,7 @@ f4(object, 'a.b.c');
 
 f4(object, 'a.b.c.d.e');
 // undefined
-
+```
 
 ## f5
 
@@ -104,6 +104,24 @@ f5(object, 'a.b.c', 5);
 
 f5(object, 'a.b.c.d.e', 10);
 // { a: { b: { c: { d: { e: 10 } } } } };
+```
 
 
+## rename keys
 
+function that recursively renames keys and returns a new modified object.
+
+1st argument has an object that has to be changed
+2nd argument has an object of key-values, where keys are the keys that should be renames and the values are the resulting key name
+
+if the key already exists, then the old value is replaced with the new one
+
+Example,
+
+```
+renameKeys({ 'a': { 'b': { 'c': 5 } } }, { c: 'b' })
+// { 'a': { 'b': { 'b': 5 } } };
+
+renameKeys({ 'a': { 'b': { 'c': 5 }, c: { d: 6 } } }, { c: 'b' })
+// { 'a': { 'c': { 'd': 6 } } };
+```
