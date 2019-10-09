@@ -51,7 +51,8 @@ f1({ a: { b: 2 } }, { a: { b: 1, c: 3 } });
 
 ## f2
 
-Find difference between two arrays. The function should return a new array that includes items that are presented in the left array, but not presented in the right array.
+Find difference of two arrays. The function should return a new array that includes items that are presented in the left array, but not presented in the right array.
+Order is determined by the first array.
 
 Example
 
@@ -60,3 +61,12 @@ f2([2, 1, 3], [2, 3, 4]);
 // [1]
 ```
 
+## f3
+
+Find intersection of two arrays.  The function should return a new array that includes items that are presented both in the left and right arrays.
+Order is determined by the first array.
+
+```
+f3([2, 1, 3], [2, 3, 4]);
+// [2, 3]
+```
