@@ -129,6 +129,7 @@ renameKeys({ 'a': { 'b': { 'c': 5 }, c: { d: 6 } } }, { c: 'b' })
 ## time stamper
 
 write a function that accepts 0 params. when you invoke the function it adds a timestamp value to the array (`new Date().getTime()`) and returns the array. So every new invocation should memoize previous array state and return the new array with the new time stamp
+__NOTE: there should be no global variables outside of the function__
 
 For example,
 
