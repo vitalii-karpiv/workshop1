@@ -125,3 +125,32 @@ renameKeys({ 'a': { 'b': { 'c': 5 } } }, { c: 'b' })
 renameKeys({ 'a': { 'b': { 'c': 5 }, c: { d: 6 } } }, { c: 'b' })
 // { 'a': { 'c': { 'd': 6 } } };
 ```
+
+## time stamper
+
+write a function that accepts 0 params. when you invoke the function it adds a timestamp value to the array (`new Date().getTime()`) and returns the array. So every new invocation should memoize previous array state and return the new array with the new time stamp
+
+For example,
+
+invocation 1:
+
+```
+timestamper()
+// [1570641110947]
+```
+
+invocation 2:
+
+```
+timestamper()
+// [1570641110947, 1570641136368]
+```
+
+invocation 3:
+
+```
+timestamper()
+// [1570641110947, 1570641136368, 1570641148449]
+```
+
+
