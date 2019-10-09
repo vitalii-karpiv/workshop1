@@ -1,5 +1,13 @@
 # Workshop 1
 
+## Setup
+
+`npm i`
+
+## Usage
+
+`npm run start`
+
 ## Sum of array
 
 Write a function that finds a sum of array items.
