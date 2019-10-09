@@ -70,3 +70,40 @@ Order is determined by the first array.
 f3([2, 1, 3], [2, 3, 4]);
 // [2, 3]
 ```
+
+
+## f4 
+
+Gets the value at `path` of object. If the `path` does not exist in the object then undefined should be returned
+path is a string of keys with `.` as a delimiter.
+
+Example,
+
+```
+const object = { 'a': { 'b': { 'c': 3 } } };
+ 
+f4(object, 'a.b.c');
+// 3
+
+f4(object, 'a.b.c.d.e');
+// undefined
+
+
+## f5
+
+Sets the value at `path` of object. If the `path` does not exist in the object then it should be recursively created.
+path is a string of keys with `.` as a delimiter.
+
+Example,
+
+```
+const object = { 'a': { 'b': { 'c': 3 } } };
+ 
+f5(object, 'a.b.c', 5);
+// { a: { b: { c: 5 } } };
+
+f5(object, 'a.b.c.d.e', 10);
+// { a: { b: { c: { d: { e: 10 } } } } };
+
+
+
