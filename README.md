@@ -49,3 +49,14 @@ f1({ a: { b: 2 } }, { a: { b: 1, c: 3 } });
 ```
 
 
+## f2
+
+Find difference between two arrays. The function should return a new array that includes items that are presented in the left array, but not presented in the right array.
+
+Example
+
+```
+f2([2, 1, 3], [2, 3, 4]);
+// [1]
+```
+
