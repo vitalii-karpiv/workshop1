@@ -8,6 +8,11 @@
 
 `npm run start`
 
+## Working on the task
+
+1. For every task create a file with the implementation of the function and single export
+2. Add a separate file with tests for the task using https://jestjs.io/
+
 ## Sum of array
 
 Write a function that finds a sum of array items.
