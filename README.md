@@ -10,6 +10,8 @@
 
 ## Working on the task
 
+Try to use TDD for the development (first tests, then implementation)
+
 1. For every task create a file with the implementation of the function and single export
 2. Add a separate file with tests for the task using https://jestjs.io/
 
