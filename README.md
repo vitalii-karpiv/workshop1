@@ -1,7 +1,5 @@
 # Workshop 1
 
-Need to finish f5 func and describe test more suitable
-
 ## Setup
 
 `npm i`
